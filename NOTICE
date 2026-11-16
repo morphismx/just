@@ -1,0 +1,32 @@
+just
+====
+
+Portions of this project (net.morphismmc.just.fmt) are ports of code
+from the Rust standard library (rust-lang/rust, rustc 1.96.0):
+
+- `core::num::imp::flt2dec` (incl. `decoder`, `estimator`) — Flt2dec.java
+- `core::num::imp::flt2dec::strategy::grisu` — Grisu.java
+- `core::num::imp::flt2dec::strategy::dragon` — Dragon.java
+- `core::num::imp::diy_float` — Fp.java
+- `core::num::imp::bignum` — Big.java
+- `core::fmt::float` (Display/Debug glue) — RustFmt.java
+
+Rust copyright:
+  The Rust Project Developers
+
+Rust license: MIT OR Apache-2.0 (dual license).
+
+
+Portions (net.morphismmc.just.fmt.Ryu) are a port of the `ryu` crate
+(dtolnay/ryu — `Buffer::format_finite` pretty-format implementation
+for `f32`).
+
+ryu copyright:
+  David Tolnay
+
+ryu license: Apache-2.0 OR BSL-1.0 (dual license).
+
+
+All other sources are original work. Files marked `JAFFY: port of
+rustc ...` or referencing a `ryu` crate item derive from the
+corresponding upstream source and retain the original copyright.
